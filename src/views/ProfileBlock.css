@@ -1,0 +1,95 @@
+#principal-data{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    gap: 10px;
+    width: auto;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.top-container img {
+    max-width: 180px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    border-radius: 8px;
+}
+.top-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+}
+#title-low {
+    font-size: 36px;
+    padding-bottom: 0px;
+}
+#title-heavy {
+    font-size: 55px;
+    padding-top: 0px;
+}
+#title-description {
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.description {
+    display: flex;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    height: auto;
+    width: 500px;
+    font-size: 14px;
+    resize: none;
+    text-align: justify;
+}
+#more-description {
+    padding: 10px;
+}
+
+.button-about-me {
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#text-button-about-me {
+    margin: 0px;
+}
+
+.about-me {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+}
+.show-about-me {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-135deg);
+}
+  
+  

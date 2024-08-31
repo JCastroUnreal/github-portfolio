@@ -1,0 +1,23 @@
+.image-banner {
+    position: fixed;
+    z-index: -1;
+    animation: bannerAnimation infinite;
+    animation-duration: var(--animationDuration);
+}
+@keyframes bannerAnimation {
+    0% {
+        rotate: -40deg;
+        transform: scale(1);
+    } 25% {
+        transform: scale(1.5);
+    } 50% {
+        rotate: 40deg;
+        transform: scale(1);
+    } 75% {
+        transform: scale(1.5);
+    } 100% {
+        rotate: -40deg;
+        transform: scale(1);
+    }
+    
+}
