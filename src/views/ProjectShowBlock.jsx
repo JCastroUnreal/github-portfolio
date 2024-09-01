@@ -5,12 +5,18 @@ import logoCSharp from "../../public/c_sharp_icon.png";
 import logoXaml from "../../public/xaml_icon.png";
 import logoGitHub from "../../public/github_icon.png";
 import logoCSS from "../../public/css_icon.png";
+import logoReact from "../../public/react_icon.png";
+import logoVite from "../../public/vite_icon.png";
+import logoJSX from "../../public/jsx_icon.png";
 
 function ProjectShowBlock({
   proyectTitle,
   videoSrc,
   cSharpIcon,
   xamlIcon,
+  reactIcon,
+  viteIcon,
+  jsxIcon,
   cssIcon,
   linkedinLink,
 }) {
@@ -34,6 +40,27 @@ function ProjectShowBlock({
             <>
               <div>
                 <ImageBlockUsedTechnology imageURL={logoXaml} />
+              </div>
+            </>
+          )}
+          {reactIcon === logoReact && (
+            <>
+              <div>
+                <ImageBlockUsedTechnology imageURL={logoReact} />
+              </div>
+            </>
+          )}
+          {viteIcon === logoVite && (
+            <>
+              <div>
+                <ImageBlockUsedTechnology imageURL={logoVite} />
+              </div>
+            </>
+          )}
+          {jsxIcon === logoJSX && (
+            <>
+              <div>
+                <ImageBlockUsedTechnology imageURL={logoJSX} />
               </div>
             </>
           )}

@@ -6,6 +6,9 @@ import ProjectShowBlock from "./ProjectShowBlock";
 import logoCSharp from "../../public/c_sharp_icon.png";
 import logoXaml from "../../public/xaml_icon.png";
 import logoCSS from "../../public/css_icon.png";
+import logoReact from "../../public/react_icon.png";
+import logoVite from "../../public/vite_icon.png";
+import logoJSX from "../../public/jsx_icon.png";
 
 import videoProyectTasks from "../../public/WPF_Proyecto_Tasks.mp4";
 
@@ -14,12 +17,15 @@ function SidebarDown() {
   const [unrealContainerShow, setUnrealContainerShow] = useState(false);
 
   const title_ProyectTasks = "TASKS MANAGER",
-    title_ProyectSportManager = "MULTI SPORTS";
+    title_ProyectSportManager = "MULTI SPORTS",
+    title_ProyectPokemonListComparator = "POKEMON LIST";
 
   const link_ProjectTasks =
       "https://github.com/JCastroUnreal/WPF_JCastro_TaskManager",
     link_ProjectMultiSports =
-      "https://github.com/JCastroUnreal/Xamarin_Multi_Sports";
+      "https://github.com/JCastroUnreal/Xamarin_Multi_Sports",
+    link_ProjectPokemonListComparator =
+      "https://github.com/JCastroUnreal/pokemon-list-comparator";
 
   const handleNetContainerClick = () => {
     if (!netContainerShow) {
@@ -59,7 +65,7 @@ function SidebarDown() {
           id="net-container"
           onClick={handleNetContainerClick}
         >
-          {!netContainerShow && <p className="footer-title">.NET</p>}
+          {!netContainerShow && <p className="footer-title">.NET & WEB</p>}
           {netContainerShow && (
             <>
               <button
@@ -82,6 +88,14 @@ function SidebarDown() {
                   xamlIcon={logoXaml}
                   cssIcon={logoCSS}
                   linkedinLink={link_ProjectMultiSports}
+                />
+                <ProjectShowBlock
+                  proyectTitle={title_ProyectPokemonListComparator}
+                  reactIcon={logoReact}
+                  viteIcon={logoVite}
+                  jsxIcon={logoJSX}
+                  cssIcon={logoCSS}
+                  linkedinLink={link_ProjectPokemonListComparator}
                 />
               </div>
             </>

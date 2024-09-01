@@ -20,7 +20,7 @@ function ProfileBlock() {
     <>
       <div className="container" id="principal-data">
         <div className="top-container">
-          <img src={profileDefault} alt="Imagen" />
+          <img src={perfilImg} alt="Imagen" />
           <div>
             <h1 className="title" id="title-low">
               {lastNames}
