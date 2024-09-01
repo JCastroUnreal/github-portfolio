@@ -27,6 +27,9 @@ function SidebarDown() {
     link_ProjectPokemonListComparator =
       "https://github.com/JCastroUnreal/pokemon-list-comparator";
 
+  const link_App_ProjectPokemonListComparator =
+    "https://jcastrounreal.github.io/pokemon-list-comparator/";
+
   const handleNetContainerClick = () => {
     if (!netContainerShow) {
       setNetContainerShow(true);
@@ -91,6 +94,7 @@ function SidebarDown() {
                 />
                 <ProjectShowBlock
                   proyectTitle={title_ProyectPokemonListComparator}
+                  appUrl={link_App_ProjectPokemonListComparator}
                   reactIcon={logoReact}
                   viteIcon={logoVite}
                   jsxIcon={logoJSX}

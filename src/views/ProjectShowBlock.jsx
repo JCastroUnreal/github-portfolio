@@ -12,6 +12,7 @@ import logoJSX from "../../public/jsx_icon.png";
 function ProjectShowBlock({
   proyectTitle,
   videoSrc,
+  appUrl,
   cSharpIcon,
   xamlIcon,
   reactIcon,
@@ -24,10 +25,13 @@ function ProjectShowBlock({
     <>
       <div className="container" id="project-block">
         <h1>{proyectTitle}</h1>
-        <video className="video" controls>
-          <source src={videoSrc} type="video/mp4" />
-          Problemas con tu navegador.
-        </video>
+        {videoSrc && (
+          <video className="video" controls>
+            <source src={videoSrc} type="video/mp4" />
+            Problemas con tu navegador.
+          </video>
+        )}
+        {appUrl && <iframe className="web-component" src={appUrl} />}
         <div id="technologies-card">
           {cSharpIcon === logoCSharp && (
             <>
