@@ -1,0 +1,14 @@
+.projects-section {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+    padding: 20px;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  .projects-section:active {
+    cursor: grabbing;
+  }
+  
+  

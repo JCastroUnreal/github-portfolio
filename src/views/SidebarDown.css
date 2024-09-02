@@ -128,13 +128,23 @@
     }
 }
 
-#open-animation-2{
-    opacity: 0%;
-
-}
-
-
 #center-title {
 
     align-items: center;
+}
+
+.carrousel-component {
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+@keyframes show {
+    from {
+        opacity: 0; scale: 10%;
+    } to {
+        opacity: 1; scale: 100%;
+    }
 }

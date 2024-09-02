@@ -2,6 +2,7 @@ import { useState } from "react";
 //import { Sidebar } from "primereact/sidebar";
 import "./SidebarDown.css";
 import ProjectShowBlock from "./ProjectShowBlock";
+import ProjectsSection from "../components/ProjectsSection";
 
 import logoCSharp from "../../public/c_sharp_icon.png";
 import logoXaml from "../../public/xaml_icon.png";
@@ -44,6 +45,32 @@ function SidebarDown() {
     }
   };
 
+  const projects = [
+    <ProjectShowBlock
+      proyectTitle={title_ProyectTasks}
+      videoSrc={videoProyectTasks}
+      cSharpIcon={logoCSharp}
+      xamlIcon={logoXaml}
+      linkedinLink={link_ProjectTasks}
+    />,
+    <ProjectShowBlock
+      proyectTitle={title_ProyectSportManager}
+      cSharpIcon={logoCSharp}
+      xamlIcon={logoXaml}
+      cssIcon={logoCSS}
+      linkedinLink={link_ProjectMultiSports}
+    />,
+    <ProjectShowBlock
+      proyectTitle={title_ProyectPokemonListComparator}
+      appUrl={link_App_ProjectPokemonListComparator}
+      reactIcon={logoReact}
+      viteIcon={logoVite}
+      jsxIcon={logoJSX}
+      cssIcon={logoCSS}
+      linkedinLink={link_ProjectPokemonListComparator}
+    />,
+  ];
+
   return (
     <>
       {/*
@@ -78,29 +105,7 @@ function SidebarDown() {
                 X
               </button>
               <div className="proyect-row">
-                <ProjectShowBlock
-                  proyectTitle={title_ProyectTasks}
-                  videoSrc={videoProyectTasks}
-                  cSharpIcon={logoCSharp}
-                  xamlIcon={logoXaml}
-                  linkedinLink={link_ProjectTasks}
-                />
-                <ProjectShowBlock
-                  proyectTitle={title_ProyectSportManager}
-                  cSharpIcon={logoCSharp}
-                  xamlIcon={logoXaml}
-                  cssIcon={logoCSS}
-                  linkedinLink={link_ProjectMultiSports}
-                />
-                <ProjectShowBlock
-                  proyectTitle={title_ProyectPokemonListComparator}
-                  appUrl={link_App_ProjectPokemonListComparator}
-                  reactIcon={logoReact}
-                  viteIcon={logoVite}
-                  jsxIcon={logoJSX}
-                  cssIcon={logoCSS}
-                  linkedinLink={link_ProjectPokemonListComparator}
-                />
+                <ProjectsSection />
               </div>
             </>
           )}
